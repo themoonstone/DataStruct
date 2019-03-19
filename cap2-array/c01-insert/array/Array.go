@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package array
 
 type Array struct {
 	data    []int		// 设置数组变量
@@ -53,15 +51,4 @@ func (a *Array) Insert(index, val int) {
 // 向数组头部插入一个新的元素
 func (a *Array) AddFirst(val int)  {
 	a.Insert(0, val)
-}
-
-func main() {
-	var a Array
-	a.InitDefaultArray()
-
-	a.AddLast(1)
-	a.AddFirst(20)
-	a.Insert(1,1)
-	fmt.Println(a.GetSize())
-	fmt.Printf("data : %d\n", a.data)
 }
