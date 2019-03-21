@@ -1,5 +1,10 @@
 package array
 
+import (
+	"bytes"
+	"fmt"
+)
+
 type Array struct {
 	data    []int		// 设置数组变量
 	size	int			// 设置数组长度
@@ -67,4 +72,62 @@ func (a *Array) Set(index int, value int) {
 		panic("index out of range")
 	}
 	a.data[index] = value
+}
+
+// 实现包含函数
+func (a *Array) Contain(value int) bool {
+	for i := 0; i < a.size; i++ {
+		if value == a.data[i] {
+			return true
+		}
+	}
+	return false
+}
+// 实现查找函数
+// 查找指定元素的索引，如果没有找到返回-1
+func (a *Array) Find(value int) int {
+	for i := 0; i < a.size; i++ {
+		if value == a.data[i] {
+			return i
+		}
+	}
+	return -1
+}
+// 实现删除函数
+// 返回被删除元素
+func (a *Array) Remove(index int) (value int) {
+	if index < 0 || index >= a.size {
+		panic("index out of range")
+	}
+	value = a.data[index]
+	for i := index;i < a.size - 1 ; i++ {
+		a.data[i] = a.data[i+1]
+	}
+	a.size--
+	return
+}
+
+// 删除头部元素
+func (a *Array) RemoveHead() (value int) {
+	return a.Remove(0)
+}
+// 删除尾部元素
+func (a *Array) RemoveTail() (value int) {
+	return a.Remove(a.size-1)
+}
+// 实现自定义数组的格式化输出
+func (a *Array) String() string {
+	var result bytes.Buffer
+	var s []byte
+	s = append(s,[]byte("[")...)
+	for i := 0; i < a.size; i++{
+		s = append(s,[]byte(fmt.Sprintf("%d",a.data[i]))...)
+		if i != a.size - 1 {
+			s = append(s, []byte(",")...)
+		}
+	}
+
+	s = append(s,[]byte("]")...)
+	result.Write(s)
+	return result.String()
 }
