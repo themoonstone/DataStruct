@@ -32,6 +32,7 @@ func isValid(s string) bool {
 
 	return as.IsEmpty()
 }
+
 func main() {
 	var as arrayStack.ArrayStack
 	as.Array.InitDefaultArray()
@@ -52,6 +53,6 @@ func main() {
 	// 判断栈是否为空
 	fmt.Println(as.IsEmpty())
 
-	var brackets string ="{}()[]{[}"
+	var brackets string ="{[}()[]{}"
 	fmt.Println(isValid(brackets))
 }
