@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"themoonstone/DataStruct/cap3-stack-queue/c04-loop-queue/ArrayQueue"
+	"themoonstone/DataStruct/cap3-stack-queue/c04-loop-queue/LoopQueue"
 )
 
 // 给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效
@@ -14,15 +14,16 @@ import (
 */
 
 func main() {
-	var aq ArrayQueue.ArrayQueue
-	aq.Constructor()
+	var queue LoopQueue.LoopQueue
+	queue.Constructor()
 	// 入栈操作
 	for i := 0 ; i < 20; i++ {
-		aq.Enqueue(i)
-		fmt.Println(aq.String())
+		queue.Enqueue(i)
+		fmt.Printf("i : %d -- queue : %v\n",i, queue.String())
 		if i % 3 == 0 {
-			aq.Dequeue()
+			queue.Dequeue()
 		}
 	}
-	fmt.Println(aq.String())
+	fmt.Println("----------------------")
+	fmt.Println(queue.String())
 }
