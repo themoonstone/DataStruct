@@ -166,3 +166,31 @@ func (list *LinkedList) String() string {
 	res = append(res, "NULL")
 	return fmt.Sprintf("%v\n", res)
 }
+
+// 删除链表
+func (list *LinkedList) Delete(index int)  interface{}{
+	if index < 0 || index > list.GetSize() {
+		panic("illegal index")
+	}
+	delNode := list.DummyHead
+	// 找到要删除的节点的前一个节点
+	for i := 0; i < index; i++ {
+		delNode = delNode.Next // 这里满足条件的其实是要删除的节点的前一个节点
+	}
+	// 要删除的元素
+	element := delNode.Next.Element
+	delNode.Next = delNode.Next.Next
+	delNode = nil
+	list.size--
+	return element
+}
+
+// 删除表头
+func (list *LinkedList) DeleteHead() interface{}  {
+	return 	list.Delete(0)
+}
+
+// 删除表尾
+func (list *LinkedList) DeleteTail() interface{} {
+	return list.Delete(list.GetSize() - 1)
+}

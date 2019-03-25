@@ -84,7 +84,7 @@ func (list *LinkedList) InsertHead(element interface{}) {
 	//list.Head = node
 
 	list.Insert(0,element)
-	list.size++
+	//list.size++
 }
 
 // 从链表尾部插入数据
