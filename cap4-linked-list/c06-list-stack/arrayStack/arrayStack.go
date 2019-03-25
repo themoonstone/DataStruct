@@ -3,7 +3,7 @@ package arrayStack
 import (
 	"bytes"
 	"fmt"
-	"themoonstone/DataStruct/cap3-stack-queue/c01-stack-basic/array"
+	"themoonstone/DataStruct/cap4-linked-list/c06-list-stack/array"
 )
 
 // 实现基于动态数组的栈
@@ -36,7 +36,10 @@ func (as *ArrayStack) IsEmpty() bool {
 
 	return as.Array.IsEmpty()
 }
-
+// 添加一个构造函数
+func (as *ArrayStack) Constructor() {
+	as.Array.InitDefaultArray()
+}
 // 重写String，实现栈的格式化输出
 func (as *ArrayStack) String() string {
 	var result bytes.Buffer
