@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"themoonstone/DataStruct/cap3-stack-queue/c05-loop-basic-queue/ArrayQueue"
 	"themoonstone/DataStruct/cap3-stack-queue/c05-loop-basic-queue/LoopQueue"
+	"themoonstone/DataStruct/cap3-stack-queue/c05-loop-basic-queue/listQueue"
 	"themoonstone/DataStruct/cap3-stack-queue/c05-loop-basic-queue/queue"
 	"time"
 )
@@ -34,4 +35,7 @@ func main() {
 	var loopQueue LoopQueue.LoopQueue
 	loopQueue.Constructor()
 	fmt.Printf("loopQueue:%v\n", QueueOp(&loopQueue, 100000))
+	var listQueue list.LinkedListQueue
+	listQueue.Constructor()
+	fmt.Printf("listQueue:%v\n", QueueOp(&listQueue, 100000))
 }
