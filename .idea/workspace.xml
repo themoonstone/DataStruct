@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7ae0a6b-8b21-41a4-8fa6-f0fee54b42dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cap4-linked-list/c06-list-stack/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cap4-linked-list/c06-list-stack/array/Array.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cap4-linked-list/c06-list-stack/arrayStack/arrayStack.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cap4-linked-list/c06-list-stack/list/list.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cap4-linked-list/c06-list-stack/listStack/listStack.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cap4-linked-list/c06-list-stack/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cap4-linked-list/c06-list-stack/stack/stack.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cap3-stack-queue/c01-stack-basic/arrayStack/arrayStack.go" beforeDir="false" afterPath="$PROJECT_DIR$/cap3-stack-queue/c01-stack-basic/arrayStack/arrayStack.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cap4-linked-list/c05-list-delete/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/cap4-linked-list/c05-list-delete/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap5-linked-list-recursive/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap5-linked-list-recursive/c01-remove-val/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap5-linked-list-recursive/c01-remove-val/list/list.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +17,7 @@
     <session id="961803564">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.opened" value="2" />
@@ -30,41 +25,68 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="23" />
-          <entry key="md" value="5" />
+          <entry key="go" value="26" />
+          <entry key="md" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="23" />
-          <entry key="Markdown" value="5" />
+          <entry key="Go" value="26" />
+          <entry key="Markdown" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="2810" />
-          <entry key="md" value="584" />
+          <entry key="go" value="3483" />
+          <entry key="md" value="689" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="2810" />
-          <entry key="Markdown" value="584" />
+          <entry key="Go" value="3483" />
+          <entry key="Markdown" value="689" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cap4-linked-list/c06-list-stack/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
-              <folding>
-                <element signature="e#14#96#0" expanded="true" />
-                <element signature="e#260#288#0" />
-              </folding>
+            <state relative-caret-position="293">
+              <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cap5-linked-list-recursive/Readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cap5-linked-list-recursive/c01-remove-val/Readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="76">
+                <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cap5-linked-list-recursive/c01-remove-val/list/list.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -72,7 +94,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cap4-linked-list/c06-list-stack/arrayStack/arrayStack.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
+            <state relative-caret-position="684">
               <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
             </state>
           </provider>
@@ -82,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/cap4-linked-list/c06-list-stack/stack/stack.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -115,6 +137,9 @@
         <option value="$PROJECT_DIR$/cap4-linked-list/c06-list-stack/listStack/listStack.go" />
         <option value="$PROJECT_DIR$/cap4-linked-list/c06-list-stack/arrayStack/arrayStack.go" />
         <option value="$PROJECT_DIR$/cap4-linked-list/c06-list-stack/main.go" />
+        <option value="$PROJECT_DIR$/cap5-linked-list-recursive/c01-remove-val/Readme.md" />
+        <option value="$PROJECT_DIR$/cap5-linked-list-recursive/c01-remove-val/list.go" />
+        <option value="$PROJECT_DIR$/cap5-linked-list-recursive/c01-remove-val/list/list.go" />
       </list>
     </option>
   </component>
@@ -137,7 +162,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -148,58 +172,44 @@
             <path>
               <item name="DataStruct" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStruct" type="462c0819:PsiDirectoryNode" />
-              <item name="cap3-stack-queue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStruct" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStruct" type="462c0819:PsiDirectoryNode" />
               <item name="cap4-linked-list" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DataStruct" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStruct" type="462c0819:PsiDirectoryNode" />
               <item name="cap4-linked-list" type="462c0819:PsiDirectoryNode" />
-              <item name="c06-list-stack" type="462c0819:PsiDirectoryNode" />
+              <item name="c05-list-delete" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DataStruct" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStruct" type="462c0819:PsiDirectoryNode" />
               <item name="cap4-linked-list" type="462c0819:PsiDirectoryNode" />
-              <item name="c06-list-stack" type="462c0819:PsiDirectoryNode" />
-              <item name="array" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStruct" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStruct" type="462c0819:PsiDirectoryNode" />
-              <item name="cap4-linked-list" type="462c0819:PsiDirectoryNode" />
-              <item name="c06-list-stack" type="462c0819:PsiDirectoryNode" />
-              <item name="arrayStack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStruct" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStruct" type="462c0819:PsiDirectoryNode" />
-              <item name="cap4-linked-list" type="462c0819:PsiDirectoryNode" />
-              <item name="c06-list-stack" type="462c0819:PsiDirectoryNode" />
+              <item name="c05-list-delete" type="462c0819:PsiDirectoryNode" />
               <item name="list" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DataStruct" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStruct" type="462c0819:PsiDirectoryNode" />
-              <item name="cap4-linked-list" type="462c0819:PsiDirectoryNode" />
-              <item name="c06-list-stack" type="462c0819:PsiDirectoryNode" />
-              <item name="listStack" type="462c0819:PsiDirectoryNode" />
+              <item name="cap5-linked-list-recursive" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DataStruct" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStruct" type="462c0819:PsiDirectoryNode" />
-              <item name="cap4-linked-list" type="462c0819:PsiDirectoryNode" />
-              <item name="c06-list-stack" type="462c0819:PsiDirectoryNode" />
-              <item name="stack" type="462c0819:PsiDirectoryNode" />
+              <item name="cap5-linked-list-recursive" type="462c0819:PsiDirectoryNode" />
+              <item name="c01-remove-val" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStruct" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStruct" type="462c0819:PsiDirectoryNode" />
+              <item name="cap5-linked-list-recursive" type="462c0819:PsiDirectoryNode" />
+              <item name="c01-remove-val" type="462c0819:PsiDirectoryNode" />
+              <item name="list" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -211,6 +221,9 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Project\go\src\themoonstone\DataStruct\cap5-linked-list-recursive\c01-remove-val\list" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Project\go\src\themoonstone\DataStruct\cap4-linked-list\c06-list-stack" />
       <recent name="E:\Project\go\src\themoonstone\DataStruct\cap4-linked-list" />
@@ -276,7 +289,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14745308" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1494638" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -327,13 +340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap4-linked-list/c05-list-delete/list/list.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3686">
-          <caret line="194" column="41" selection-start-line="194" selection-start-column="41" selection-end-line="194" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -424,34 +430,59 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="56" column="34" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
-          <folding>
-            <element signature="e#19#100#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cap4-linked-list/c06-list-stack/stack/stack.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cap4-linked-list/c06-list-stack/arrayStack/arrayStack.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
+        <state relative-caret-position="684">
           <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cap4-linked-list/c06-list-stack/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
-          <folding>
-            <element signature="e#14#96#0" expanded="true" />
-            <element signature="e#260#288#0" />
-          </folding>
+        <state relative-caret-position="293">
+          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap5-linked-list-recursive/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap5-linked-list-recursive/c01-remove-val/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="76">
+            <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap4-linked-list/c05-list-delete/list/list.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="174" column="29" lean-forward="true" selection-start-line="174" selection-start-column="29" selection-end-line="174" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap5-linked-list-recursive/c01-remove-val/list/list.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
