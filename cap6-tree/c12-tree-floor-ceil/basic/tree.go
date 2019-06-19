@@ -378,7 +378,7 @@ func (tree *BasicTree) floor(node *Node, e interface{}) *Node {
 		return nil
 	}
 	// 2. e > node.element的情况下，e<node.right.element或者node.right==nil,此时当前node就是e的floor节点
-	if interfaces.Compare(e, node.Element) == 1 && (node.Right == nil || interfaces.Compare(e, node.Right.Element) == -1) {
+	if interfaces.Compare(e, node.Element) == 1 && (node.Right == nil || (interfaces.Compare(e, node.Right.Element) == -1 &&((node.Right.Left == nil) || interfaces.Compare(node.Right.Left.Element, e)== 1))) {
 		return node
 	}
 	// 3. e等于node.element，e的节点就是其本身

@@ -8,7 +8,7 @@ import (
 func main() {
 	tree := basic.BasicTree{}
 	tree.Constructor()
-	var data []int = []int{7,3,8,2,4,9}
+	var data []int = []int{7,3,12,8,2,5,14}
 	for i := 0; i < len(data); i++ {
 		tree.Add(data[i])
 	}
@@ -42,7 +42,7 @@ func main() {
 	tree.FrontIter()
 	*/
 	// 查找指定元素的floor节点
-	fmt.Printf("floor : %v\n", tree.Floor(4))
+	fmt.Printf("floor : %v\n", tree.Floor(45))
 
 	// 查找指定元素的ceil节点
 	//fmt.Printf("ceil : %v\n", tree.Ceil(7))
