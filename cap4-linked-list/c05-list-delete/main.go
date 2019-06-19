@@ -12,23 +12,27 @@ func main() {
 	for i := 0; i < 5; i++ {
 		List.InsertHead(i)
 	}
+	List.InsertTail(3)
 	fmt.Println(List.String())
 	// 向指定位置插入
-	List.Insert(3,100)
-	fmt.Println(List.String())
-
-	// 查询指定节点
-	fmt.Println(List.Get(5))
-	// 查询指定元素是否包含在链表中
-	fmt.Println(List.Contains(200))
-	// 修改节点
-	List.Update(2, 1000)
-	fmt.Println(List.String())
+	//List.Insert(3,100)
+	//fmt.Println(List.String())
+	//
+	//// 查询指定节点
+	//fmt.Println(List.Get(5))
+	//// 查询指定元素是否包含在链表中
+	//fmt.Println(List.Contains(200))
+	//// 修改节点
+	//List.Update(2, 1000)
+	//fmt.Println(List.String())
 	// 删除节点
-	List.Delete(2)
-	fmt.Println(List.String())
-	List.DeleteHead()
-	fmt.Println(List.String())
-	List.DeleteTail()
-	fmt.Println(List.DeleteTail())
+	//List.Delete(2)
+	//fmt.Println(List.String())
+	//List.DeleteHead()
+	//fmt.Println(List.String())
+	//List.DeleteTail()
+	//fmt.Println(List.DeleteTail())
+	List.RemoveElement(3)
+	fmt.Printf("list : %s\n", List.String())
+
 }

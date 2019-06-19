@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7ae0a6b-8b21-41a4-8fa6-f0fee54b42dd" name="Default Changelist" comment="" />
+    <list default="true" id="c7ae0a6b-8b21-41a4-8fa6-f0fee54b42dd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cap7-set/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/a-tale-of-two-cities.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/c01-bst-set/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/c01-bst-set/bst-set/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/c01-bst-set/bst-set/bst-set.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/c01-bst-set/bstree/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/c01-bst-set/bstree/array/Array.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/c01-bst-set/bstree/basic/tree.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/c01-bst-set/bstree/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/c01-bst-set/bstree/queue/ArrayQueue/arrayQueue.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/c01-bst-set/bstree/queue/queue/queue.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/c01-bst-set/bstree/stack/arrayStack/arrayStack.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/c01-bst-set/bstree/stack/stack/stack.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/c01-bst-set/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/c01-bst-set/set/set.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/c01-bst-set/utils/interfaces/interfaces.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/c02-link-list-set/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/c02-link-list-set/SetImplement/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/c02-link-list-set/SetImplement/bst-set.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/c02-link-list-set/SetImplement/linked-list-set.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/c02-link-list-set/basic-bstree/tree.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/c02-link-list-set/linked-list/list.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/c02-link-list-set/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/c02-link-list-set/set/set.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/c02-link-list-set/utils/interfaces/interfaces.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cap7-set/pride-and-prejudice.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cap4-linked-list/c05-list-delete/list/list.go" beforeDir="false" afterPath="$PROJECT_DIR$/cap4-linked-list/c05-list-delete/list/list.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cap4-linked-list/c05-list-delete/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cap4-linked-list/c05-list-delete/main.go" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,80 +42,79 @@
     <session id="961803564">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="91" />
-          <entry key="md" value="32" />
+          <entry key="go" value="127" />
+          <entry key="md" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="91" />
-          <entry key="Markdown" value="32" />
+          <entry key="Go" value="127" />
+          <entry key="Markdown" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="9858" />
-          <entry key="md" value="2798" />
+          <entry key="go" value="14516" />
+          <entry key="md" value="4581" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="9858" />
-          <entry key="Markdown" value="2798" />
+          <entry key="Go" value="14516" />
+          <entry key="Markdown" value="4581" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cap6-tree/c11-tree-del-AnyNode/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cap6-tree/c11-tree-del-AnyNode/Readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="372">
-                <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cap6-tree/c12-tree-floor-ceil/Readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="220">
-                <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/cap7-set/c02-link-list-set/linked-list/list.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="212" column="24" selection-start-line="212" selection-start-column="24" selection-end-line="212" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cap6-tree/c11-tree-del-AnyNode/basic/tree.go">
+        <entry file="file://$PROJECT_DIR$/cap4-linked-list/c05-list-delete/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="174" column="30" selection-start-line="174" selection-start-column="30" selection-end-line="174" selection-end-column="30" />
+            <state relative-caret-position="589">
+              <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cap7-set/c02-link-list-set/SetImplement/linked-list-set.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cap7-set/c02-link-list-set/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+              <folding>
+                <element signature="e#14#139#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,15 +135,27 @@
       <find>c09-tree-layer</find>
       <find>add</find>
       <find>c10-tree-del-MNode</find>
+      <find>c11-tree-del-AnyNode</find>
+      <find>c12-tree-floor-ceil</find>
+      <find>c13-tree-floor-ceil-opt</find>
+      <find>cap6-tree/c13-tree-floor-ceil-opt</find>
+      <find>cap6-tree/utils</find>
     </findStrings>
     <replaceStrings>
       <replace>c10-tree-del-MNode</replace>
       <replace>c11-tree-del-AnyNode</replace>
+      <replace>c12-tree-floor-ceil</replace>
+      <replace>c13-tree-floor-ceil-opt</replace>
+      <replace>cap7-set/c01-bst-set/bstree</replace>
     </replaceStrings>
     <dirStrings>
       <dir>E:\Project\go\src\themoonstone\DataStruct</dir>
       <dir>E:\Project\go\src\themoonstone\DataStruct\cap6-tree\c10-tree-del-MNode</dir>
       <dir>E:\Project\go\src\themoonstone\DataStruct\cap6-tree\c11-tree-del-AnyNode</dir>
+      <dir>E:\Project\go\src\themoonstone\DataStruct\cap6-tree\c12-tree-floor-ceil</dir>
+      <dir>E:\Project\go\src\themoonstone\DataStruct\cap6-tree\c13-tree-floor-ceil-opt</dir>
+      <dir>E:\Project\go\src\themoonstone\DataStruct\cap7-set\c01-bst-set</dir>
+      <dir>E:\Project\go\src\themoonstone\DataStruct\cap7-set</dir>
     </dirStrings>
   </component>
   <component name="GOROOT" path="E:\Go" />
@@ -124,25 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cap4-linked-list/c04-list-query-it-update/Readme.md" />
-        <option value="$PROJECT_DIR$/cap4-linked-list/c04-list-query-it-update/main.go" />
-        <option value="$PROJECT_DIR$/cap4-linked-list/c03-virtual-head/list/list.go" />
-        <option value="$PROJECT_DIR$/cap4-linked-list/c04-list-query-it-update/list/list.go" />
-        <option value="$PROJECT_DIR$/cap4-linked-list/c05-list-delete/list/list.go" />
-        <option value="$PROJECT_DIR$/cap4-linked-list/c05-list-delete/main.go" />
-        <option value="$PROJECT_DIR$/cap4-linked-list/c05-list-delete/Readme.md" />
-        <option value="$PROJECT_DIR$/cap4-linked-list/c06-list-stack/Readme.md" />
-        <option value="$PROJECT_DIR$/cap4-linked-list/c06-list-stack/listStack/listArray.go" />
-        <option value="$PROJECT_DIR$/cap4-linked-list/c06-list-stack/listStack/listStack.go" />
-        <option value="$PROJECT_DIR$/cap4-linked-list/c06-list-stack/arrayStack/arrayStack.go" />
-        <option value="$PROJECT_DIR$/cap4-linked-list/c06-list-stack/main.go" />
-        <option value="$PROJECT_DIR$/cap5-linked-list-recursive/c01-remove-val/Readme.md" />
-        <option value="$PROJECT_DIR$/cap5-linked-list-recursive/c01-remove-val/list.go" />
-        <option value="$PROJECT_DIR$/cap5-linked-list-recursive/c01-remove-val/list/list.go" />
-        <option value="$PROJECT_DIR$/cap6-tree/Readme.md" />
-        <option value="$PROJECT_DIR$/cap6-tree/c01-basic-tree/basic/tree.go" />
-        <option value="$PROJECT_DIR$/cap6-tree/c01-basic-tree/Readme.md" />
-        <option value="$PROJECT_DIR$/cap6-tree/c02-tree-add/Readme.md" />
         <option value="$PROJECT_DIR$/cap6-tree/utils/interfaces.go" />
         <option value="$PROJECT_DIR$/cap6-tree/c03-tree-add-opt/Readme.md" />
         <option value="$PROJECT_DIR$/cap6-tree/c04-tree-query/Readme.md" />
@@ -173,6 +195,27 @@
         <option value="$PROJECT_DIR$/cap6-tree/c11-tree-del-AnyNode/basic/tree.go" />
         <option value="$PROJECT_DIR$/cap6-tree/c11-tree-del-AnyNode/Readme.md" />
         <option value="$PROJECT_DIR$/cap6-tree/c12-tree-floor-ceil/Readme.md" />
+        <option value="$PROJECT_DIR$/cap6-tree/c12-tree-floor-ceil/main.go" />
+        <option value="$PROJECT_DIR$/cap6-tree/c13-tree-floor-ceil-opt/Readme.md" />
+        <option value="$PROJECT_DIR$/cap6-tree/c12-tree-floor-ceil/basic/tree.go" />
+        <option value="$PROJECT_DIR$/cap6-tree/c13-tree-floor-ceil-opt/basic/tree.go" />
+        <option value="$PROJECT_DIR$/cap6-tree/c13-tree-floor-ceil-opt/main.go" />
+        <option value="$PROJECT_DIR$/cap7-set/Readme.md" />
+        <option value="$PROJECT_DIR$/cap7-set/c01-bst-set/bstree/main.go" />
+        <option value="$PROJECT_DIR$/cap7-set/c01-bst-set/bstree/basic/tree.go" />
+        <option value="$PROJECT_DIR$/cap7-set/c01-bst-set/Readme.md" />
+        <option value="$PROJECT_DIR$/cap7-set/c01-bst-set/set/set.go" />
+        <option value="$PROJECT_DIR$/cap7-set/c01-bst-set/bst-set/Readme.md" />
+        <option value="$PROJECT_DIR$/cap7-set/c02-link-list-set/Readme.md" />
+        <option value="$PROJECT_DIR$/cap7-set/c01-bst-set/bst-set/bst-set.go" />
+        <option value="$PROJECT_DIR$/cap7-set/c01-bst-set/main.go" />
+        <option value="$PROJECT_DIR$/cap7-set/c02-link-list-set/basic-bstree/tree.go" />
+        <option value="$PROJECT_DIR$/cap7-set/c02-link-list-set/bst-set/bst-set.go" />
+        <option value="$PROJECT_DIR$/cap7-set/c02-link-list-set/main.go" />
+        <option value="$PROJECT_DIR$/cap7-set/c02-link-list-set/SetImplement/linked-list-set.go" />
+        <option value="$PROJECT_DIR$/cap4-linked-list/c05-list-delete/main.go" />
+        <option value="$PROJECT_DIR$/cap4-linked-list/c05-list-delete/list/list.go" />
+        <option value="$PROJECT_DIR$/cap7-set/c02-link-list-set/linked-list/list.go" />
       </list>
     </option>
   </component>
@@ -184,7 +227,8 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-15" />
-    <option name="width" value="840" />
+    <option name="y" value="10" />
+    <option name="width" value="765" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -202,6 +246,49 @@
               <item name="DataStruct" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStruct" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="DataStruct" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStruct" type="462c0819:PsiDirectoryNode" />
+              <item name="cap4-linked-list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStruct" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStruct" type="462c0819:PsiDirectoryNode" />
+              <item name="cap4-linked-list" type="462c0819:PsiDirectoryNode" />
+              <item name="c05-list-delete" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStruct" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStruct" type="462c0819:PsiDirectoryNode" />
+              <item name="cap4-linked-list" type="462c0819:PsiDirectoryNode" />
+              <item name="c05-list-delete" type="462c0819:PsiDirectoryNode" />
+              <item name="list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStruct" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStruct" type="462c0819:PsiDirectoryNode" />
+              <item name="cap7-set" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStruct" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStruct" type="462c0819:PsiDirectoryNode" />
+              <item name="cap7-set" type="462c0819:PsiDirectoryNode" />
+              <item name="c02-link-list-set" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStruct" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStruct" type="462c0819:PsiDirectoryNode" />
+              <item name="cap7-set" type="462c0819:PsiDirectoryNode" />
+              <item name="c02-link-list-set" type="462c0819:PsiDirectoryNode" />
+              <item name="linked-list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStruct" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStruct" type="462c0819:PsiDirectoryNode" />
+              <item name="cap7-set" type="462c0819:PsiDirectoryNode" />
+              <item name="c02-link-list-set" type="462c0819:PsiDirectoryNode" />
+              <item name="SetImplement" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -213,22 +300,23 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../coding-207" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../coding-207/04-Linked-List" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Project\go\src\themoonstone\DataStruct\cap6-tree" />
-      <recent name="E:\Project\go\src\themoonstone\DataStruct\cap6-tree\c09-tree-layer\queue" />
-      <recent name="E:\Project\go\src\themoonstone\DataStruct\cap6-tree\c08-tree-front-nr" />
-      <recent name="E:\Project\go\src\themoonstone\DataStruct\cap4-linked-list\c06-list-stack" />
-      <recent name="E:\Project\go\src\themoonstone\DataStruct\cap4-linked-list" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Project\go\src\themoonstone\DataStruct\cap7-set\c02-link-list-set" />
       <recent name="E:\Project\go\src\themoonstone\DataStruct\cap6-tree\c09-tree-layer\stack1" />
       <recent name="E:\Project\go\src\themoonstone\DataStruct\cap6-tree\utils\interfaces" />
       <recent name="E:\Project\go\src\themoonstone\DataStruct\cap5-linked-list-recursive\c01-remove-val\list" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Project\go\src\themoonstone\DataStruct\cap7-set\c02-link-list-set" />
+      <recent name="E:\Project\go\src\themoonstone\DataStruct\cap7-set" />
+      <recent name="E:\Project\go\src\themoonstone\DataStruct\cap7-set\c01-bst-set" />
+      <recent name="E:\Project\go\src\themoonstone\DataStruct\cap6-tree" />
+      <recent name="E:\Project\go\src\themoonstone\DataStruct\cap6-tree\c09-tree-layer\queue" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -303,7 +391,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15549597" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16152816" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -315,7 +403,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.23512748" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.305949" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -330,268 +418,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cap4-linked-list/c02-list-insert/list/list.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1095">
-          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap4-linked-list/c05-list-delete/list/list.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1282">
-          <caret line="80" column="22" lean-forward="true" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap6-tree/c02-tree-add/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="228">
-            <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap6-tree/utils/interfaces/interfaces.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap6-tree/c03-tree-add-opt/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="323">
-            <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap6-tree/c04-tree-query/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="306">
-            <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap5-linked-list-recursive/c06-recursive-list/list/list.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap6-tree/c05-tree-front/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="551">
-            <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap6-tree/c05-tree-front/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="e#14#89#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/src/bytes/buffer.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap6-tree/c06-tree-mid/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="391">
-            <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap6-tree/c06-tree-mid/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding>
-            <element signature="e#14#89#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap6-tree/c07-tree-after/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="e#14#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap6-tree/c07-tree-after/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="429">
-            <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap3-stack-queue/c02-brackets-match/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap3-stack-queue/c01-stack-basic/arrayStack/arrayStack.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap3-stack-queue/c01-stack-basic/stack/stack.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap6-tree/c08-tree-front-nr/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="429">
-            <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap3-stack-queue/c01-stack-basic/array/Array.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap6-tree/c08-tree-front-nr/arrayStack/arrayStack.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-482">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap6-tree/c08-tree-front-nr/array/Array.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap3-stack-queue/c01-stack-basic/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap6-tree/c08-tree-front-nr/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap3-stack-queue/c03-queue/array/Array.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="108" column="16" selection-start-line="108" selection-start-column="16" selection-end-line="108" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap3-stack-queue/c04-loop-queue/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="315">
-            <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap3-stack-queue/c03-queue/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="334">
-            <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap3-stack-queue/c03-queue/ArrayQueue/arrayQueue.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap3-stack-queue/c03-queue/queue/queue.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap6-tree/c09-tree-layer/array/Array.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="e#15#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap6-tree/c09-tree-layer/stack/stack/stack.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap6-tree/c09-tree-layer/stack/arrayStack/arrayStack.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap6-tree/c09-tree-layer/queue/queue/queue.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap6-tree/c09-tree-layer/queue/ArrayQueue/arrayQueue.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cap6-tree/c09-tree-layer/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-          <folding>
-            <element signature="e#14#85#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -609,9 +439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="e#15#48#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -697,35 +524,274 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cap6-tree/c11-tree-del-AnyNode/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
+        <state relative-caret-position="361">
           <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap6-tree/c11-tree-del-AnyNode/basic/tree.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="174" column="30" selection-start-line="174" selection-start-column="30" selection-end-line="174" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cap6-tree/c11-tree-del-AnyNode/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="372">
+          <first_editor relative-caret-position="1083">
             <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cap6-tree/c11-tree-del-AnyNode/basic/tree.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3192">
+          <caret line="174" column="30" selection-start-line="174" selection-start-column="30" selection-end-line="174" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap6-tree/c12-tree-floor-ceil/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="49" column="45" lean-forward="true" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cap6-tree/c12-tree-floor-ceil/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="220">
-            <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="284">
+            <caret line="80" column="31" lean-forward="true" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="31" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap6-tree/c12-tree-floor-ceil/basic/tree.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="364" column="26" selection-start-line="364" selection-start-column="26" selection-end-line="364" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap6-tree/c13-tree-floor-ceil-opt/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="308">
+            <caret line="96" column="6" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap6-tree/c13-tree-floor-ceil-opt/basic/tree.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="424" column="23" selection-start-line="424" selection-start-column="23" selection-end-line="424" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/garyburd/redigo/redis/conn.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="615" column="20" lean-forward="true" selection-start-line="615" selection-start-column="20" selection-end-line="615" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/garyburd/redigo/redis/redis.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap6-tree/c13-tree-floor-ceil-opt/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap7-set/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="7" selection-start-column="7" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap7-set/c01-bst-set/bstree/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="43" column="6" lean-forward="true" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap7-set/c01-bst-set/bstree/queue/ArrayQueue/arrayQueue.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap7-set/c01-bst-set/bstree/stack/arrayStack/arrayStack.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap7-set/c01-bst-set/utils/interfaces/interfaces.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap7-set/c01-bst-set/bst-set/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="14" selection-start-column="14" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap7-set/c01-bst-set/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="38">
+            <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap7-set/c01-bst-set/set/set.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap7-set/c02-link-list-set/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="57">
+            <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap7-set/c01-bst-set/bst-set/bst-set.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap7-set/c01-bst-set/bstree/basic/tree.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap7-set/c01-bst-set/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap4-linked-list/c01-basic-list/list/list.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap4-linked-list/c03-virtual-head/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="323">
+            <caret line="17" column="62" lean-forward="true" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap4-linked-list/c07-list-queue/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="417">
+            <caret line="43" column="10" lean-forward="true" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap7-set/c02-link-list-set/basic-bstree/tree.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8545">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap7-set/c02-link-list-set/utils/interfaces/interfaces.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-551" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap7-set/c02-link-list-set/SetImplement/bst-set.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="28" column="1" selection-start-line="9" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap4-linked-list/c07-list-queue/queue/queue.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap4-linked-list/c07-list-queue/list/list.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-931" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap4-linked-list/c06-list-stack/list/list.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3382" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap4-linked-list/c05-list-delete/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap7-set/c02-link-list-set/SetImplement/linked-list-set.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap7-set/c02-link-list-set/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding>
+            <element signature="e#14#139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap4-linked-list/c05-list-delete/list/list.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="240" column="1" lean-forward="true" selection-start-line="219" selection-end-line="240" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap7-set/c02-link-list-set/linked-list/list.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="212" column="24" selection-start-line="212" selection-start-column="24" selection-end-line="212" selection-end-column="24" />
         </state>
       </provider>
     </entry>

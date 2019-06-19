@@ -1,4 +1,4 @@
-package list
+package linked_list
 
 import "fmt"
 
@@ -196,42 +196,21 @@ func (list *LinkedList) DeleteTail() interface{} {
 }
 
 // 删除指定元素的节点(默认删除第一个)
-//func (list *LinkedList) RemoveElement(e interface{}) {
-//	// 遍历链表，遇到与e相等的节点即删除
-//	// 定义一个虚拟头节点
-//	VHead := list.DummyHead
-//	prev := VHead
-//	curNode := VHead.Next
-//
-//	// 遍历
-//	for curNode != nil {
-//		// 判断
-//		if curNode.Element == e {
-//			prev.Next = curNode.Next
-//			curNode = curNode.Next
-//			list.size--
-//		} else {
-//			prev = prev.Next
-//			curNode = curNode.Next
-//		}
-//	}
-//}
-
-// 删除指定元素的节点
 func (list *LinkedList) RemoveElement(e interface{}) {
 	// 遍历链表，遇到与e相等的节点即删除
 	// 定义一个虚拟头节点
 	prev := list.DummyHead
 
 	// 遍历
+	// prev表示要删除的节点的前节点
 	for prev.Next != nil {
 		// 判断
 		if prev.Next.Element == e {
 			// 要删除的节点
 			toDelNode := prev.Next
-			// 这里已经将toDelNode从链表中删除了
+			// 将要删除的节点toDelNode从链表中剔除
 			prev.Next = toDelNode.Next
-			// 这里用toDelNode.Next=nil是为了让toDelNode不再指向链表
+			// 让节点不再指向链表
 			toDelNode.Next = nil
 			list.size--
 		} else {
