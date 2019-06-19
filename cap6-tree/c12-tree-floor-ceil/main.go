@@ -2,16 +2,17 @@ package main
 
 import (
 	"fmt"
-	"themoonstone/DataStruct/cap6-tree/c11-tree-del-AnyNode/basic"
+	"themoonstone/DataStruct/cap6-tree/c12-tree-floor-ceil/basic"
 )
 
 func main() {
 	tree := basic.BasicTree{}
 	tree.Constructor()
-	var data []int = []int{5,3,6,8,4,2}
+	var data []int = []int{7,3,8,2,4,9}
 	for i := 0; i < len(data); i++ {
 		tree.Add(data[i])
 	}
+	/*
 	//fmt.Println(tree.String())
 	// 前序遍历
 	tree.FrontIter()
@@ -39,4 +40,12 @@ func main() {
 	// 删除指定元素的节点
 	tree.RemoveAnyNode(3)
 	tree.FrontIter()
+	*/
+	// 查找指定元素的floor节点
+	fmt.Printf("floor : %v\n", tree.Floor(4))
+
+	// 查找指定元素的ceil节点
+	//fmt.Printf("ceil : %v\n", tree.Ceil(7))
+	fmt.Printf("ceil : %v\n", tree.Ceil(4))
+	//fmt.Printf("ceil : %v\n", tree.Ceil(1))
 }

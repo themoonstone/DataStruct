@@ -3,7 +3,7 @@ package arrayStack
 import (
 	"bytes"
 	"fmt"
-	"themoonstone/DataStruct/cap6-tree/c11-tree-del-AnyNode/array"
+	"themoonstone/DataStruct/cap6-tree/c12-tree-floor-ceil/array"
 )
 
 // 实现基于动态数组的栈

@@ -3,8 +3,8 @@ package basic
 import (
 	"bytes"
 	"fmt"
-	"themoonstone/DataStruct/cap6-tree/c11-tree-del-AnyNode/queue/ArrayQueue"
-	"themoonstone/DataStruct/cap6-tree/c11-tree-del-AnyNode/stack/arrayStack"
+	"themoonstone/DataStruct/cap6-tree/c12-tree-floor-ceil/queue/ArrayQueue"
+	"themoonstone/DataStruct/cap6-tree/c12-tree-floor-ceil/stack/arrayStack"
 	"themoonstone/DataStruct/cap6-tree/utils/interfaces"
 )
 
@@ -357,5 +357,71 @@ func (tree *BasicTree) removeAnyNode(node *Node, e interface{}) *Node {
 			// 返回successor, 以后继节点为删除指定节点之后的新的二分搜索树的根节点
 			return successor
 		}
+	}
+}
+
+// 在二分搜索树中查找指定元素的floor
+func (tree *BasicTree) Floor(e interface{}) interface{} {
+	if node := tree.floor(tree.Root, e); nil != node {
+		return node.Element
+	} else {
+		return nil
+	}
+}
+
+// 查找二分搜索树指定元素floor
+func (tree *BasicTree) floor(node *Node, e interface{}) *Node {
+	// 判断，如果e<node.element，则其floor肯定在node的左子树中
+	// 递归退出条件：找到floor则退出，这里退出有两种情况
+	// 1. e < node.element的情况下，node.left==nil，说明没有floor节点，最小的节点元素都比e大
+	if interfaces.Compare(e, node.Element) == -1 && node.Left == nil {
+		return nil
+	}
+	// 2. e > node.element的情况下，e<node.right.element或者node.right==nil,此时当前node就是e的floor节点
+	if interfaces.Compare(e, node.Element) == 1 && (node.Right == nil || interfaces.Compare(e, node.Right.Element) == -1) {
+		return node
+	}
+	// 3. e等于node.element，e的节点就是其本身
+	if interfaces.Compare(e, node.Element) == 0 {
+		return node
+	}
+	// 4. 递归调用
+	if interfaces.Compare(e, node.Element) == 1 {
+		return tree.floor(node.Right, e)
+	} else {
+		return tree.floor(node.Left, e)
+	}
+}
+
+// 在二分搜索树中查找指定元素的ceil
+func (tree *BasicTree) Ceil(e interface{}) interface{} {
+	if node := tree.ceil(tree.Root, e); nil != node {
+		return node.Element
+	} else {
+		return nil
+	}
+}
+
+// 查找二分搜索树指定元素(FN)的ceil节点
+func (tree *BasicTree) ceil(node *Node, e interface{}) *Node {
+	// 递归终止条件
+	// 1. FN > node.element 分情况判断
+		// 1. node.Right == nil, 表示没有满足条件的ceil，因为整个二分搜索树都比该节点小
+	if interfaces.Compare(e, node.Element) == 1 && node.Right == nil {
+		return nil
+	}else if (interfaces.Compare(e, node.Element) == -1 && (node.Left == nil || (interfaces.Compare(e, node.Left.Element) == 1 && (node.Left.Right == nil || interfaces.Compare(node.Left.Right.Element, e) == -1)))){
+		// 写法太麻烦，需要优化
+		return node
+	}
+	// 3. FN = node.element, node就是FN的ceil
+	if interfaces.Compare(e, node.Element) == 0 {
+		return node
+	}
+	// 4. 递归调用(缩减规模)
+	if interfaces.Compare(e, node.Element) == 1 {
+		return tree.ceil(node.Right, e)
+	} else {
+		// FN(e)<node.Element
+		return tree.ceil(node.Left, e)
 	}
 }
