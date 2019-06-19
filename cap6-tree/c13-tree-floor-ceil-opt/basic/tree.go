@@ -3,8 +3,8 @@ package basic
 import (
 	"bytes"
 	"fmt"
-	"themoonstone/DataStruct/cap6-tree/c12-tree-floor-ceil/queue/ArrayQueue"
-	"themoonstone/DataStruct/cap6-tree/c12-tree-floor-ceil/stack/arrayStack"
+	"themoonstone/DataStruct/cap6-tree/c13-tree-floor-ceil-opt/queue/ArrayQueue"
+	"themoonstone/DataStruct/cap6-tree/c13-tree-floor-ceil-opt/stack/arrayStack"
 	"themoonstone/DataStruct/cap6-tree/utils/interfaces"
 )
 
@@ -362,7 +362,7 @@ func (tree *BasicTree) removeAnyNode(node *Node, e interface{}) *Node {
 
 // 在二分搜索树中查找指定元素的floor
 func (tree *BasicTree) Floor(e interface{}) interface{} {
-	if node := tree.floor(tree.Root, e); nil != node {
+	if node := tree.floorOpt(tree.Root, e); nil != node {
 		return node.Element
 	} else {
 		return nil
@@ -396,9 +396,34 @@ func (tree *BasicTree) floor(node *Node, e interface{}) *Node {
 	}
 }
 
+// 查找二分搜索树指定元素floor逻辑优化
+func (tree *BasicTree) floorOpt(node *Node, e interface{}) *Node {
+	// node为空，返回nil
+	if node == nil {
+		return nil
+	}
+
+	// 如果node.element > FN，那么FN的floor肯定在左子树中
+	if interfaces.Compare(node.Element ,e) == 1 {
+		return tree.floorOpt(node.Left, e)
+	} else if interfaces.Compare(node.Element, e) == 0{
+		return node
+	} else {
+		// node.element < FN, 那么node本身可能是FN的floor节点，但也可能floor节点在它的右子树中
+		tmpNode := tree.floorOpt(node.Right, e)
+
+		if nil != tmpNode {
+			return tmpNode
+		}
+		// 不在右子树中，那肯定是node本身
+		return node
+	}
+
+}
+
 // 在二分搜索树中查找指定元素的ceil
 func (tree *BasicTree) Ceil(e interface{}) interface{} {
-	if node := tree.ceil(tree.Root, e); nil != node {
+	if node := tree.ceilOpt(tree.Root, e); nil != node {
 		return node.Element
 	} else {
 		return nil
@@ -429,5 +454,28 @@ func (tree *BasicTree) ceil(node *Node, e interface{}) *Node {
 	} else {
 		// FN(e)<node.Element
 		return tree.ceil(node.Left, e)
+	}
+}
+
+// 查找二分搜索树指定元素(FN)的ceil节点
+func (tree *BasicTree) ceilOpt(node *Node, e interface{}) *Node {
+	// 递归终止条件
+	if node == nil {
+		return nil
+	}
+	// node.element节点值大于FN，有可能是node本身，但也有可能在node左子树中，所以需要先找一下左子树
+	if interfaces.Compare(node.Element, e) == 1 {
+		tmpNode := tree.ceilOpt(node.Left, e)
+		if nil != tmpNode {
+			return tmpNode
+		}
+		// 在node左子树中没有找到大于e的最小值
+		return node
+	} else if interfaces.Compare(node.Element, e) == 0 {
+		// node.element节点值等于FN
+		return node
+	} else {
+		// node.element节点值小于FN
+		return tree.ceilOpt(node.Right, e)
 	}
 }
