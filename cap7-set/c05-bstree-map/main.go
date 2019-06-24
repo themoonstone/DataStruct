@@ -5,13 +5,14 @@ import (
 	"io/ioutil"
 	"os"
 	"strings"
-	"themoonstone/DataStruct/cap7-set/c02-link-list-set/SetImplement"
+	"themoonstone/DataStruct/cap7-set/c05-bstree-map/map/mapImplement"
 	"unicode"
 )
 
 func main() {
-	var list_set SetImplement.LinkedListSet
-	list_set.Constructor()
+	var bm mapImplement.BasicTreeMap
+	// map初始化
+	bm.Constructor()
 	// 做一个单词统计应用
 	file_name := "../pride-and-prejudice.txt"
 	// 读取文件内容
@@ -21,18 +22,20 @@ func main() {
 	}
 	content, err := ioutil.ReadAll(f)
 	if nil != err {
-		panic(err)
+		panic(content)
 	}
-	// 提取单词
+	 //提取单词
 	words := strings.FieldsFunc(string(content), func(r rune) bool {
 		return !unicode.IsLetter(r)
 	})
-	// 统计单词数量
-	fmt.Printf("Total counts : %d\n", len(words))
-	// 将所有单词存入集合中
+	//词频统计
 	for _, word := range words {
-		list_set.Add(word)
+		if bm.Contains(word) {
+			bm.Set(word, bm.Get(word).(int) + 1)
+		} else {
+			bm.Add(word,1)
+		}
 	}
-	// 统计不重复的单词数量
-	fmt.Printf("Different counts : %d\n", list_set.GetSize())
+	fmt.Println(bm.Get("what"))
+	fmt.Println(bm.Size())
 }

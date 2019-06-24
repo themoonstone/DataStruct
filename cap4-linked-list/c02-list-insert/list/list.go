@@ -50,8 +50,6 @@ func (list *LinkedList) IsEmpty() bool {
 func (list *LinkedList) InsertHead(element interface{}) {
 	// 通过新元素生成一个node,让该node的next指向head节点，然后使该node成为新的头节点
 	var node *Node = new(Node)
-	//node.ConstructorWithData(element)
-	//node.Next = list.Head
 	node.ConstructorAll(list.Head, element)
 	list.Head = node
 	list.size++
