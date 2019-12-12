@@ -7,6 +7,6 @@ import (
 
 func main() {
 	var s recursive_array.RecursiveArray
-	var array []int = []int{1,2,3,4,5,6,7,8,9}
+	var array []int = []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
 	fmt.Printf("sum : %d\n", s.Sum(array))
 }

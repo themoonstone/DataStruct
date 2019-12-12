@@ -16,16 +16,16 @@ func isValid(s string) bool {
 	var as arrayStack.ArrayStack
 	as.Array.InitDefaultArray()
 	for _, schar := range s {
-		if string(schar) == "{" || string(schar) == "[" || string(schar) == "("{
+		if string(schar) == "{" || string(schar) == "[" || string(schar) == "(" {
 			as.Push(string(schar))
 		}
-		if string(schar) == "}" && as.Pop() != "{"{
+		if string(schar) == "}" && as.Pop() != "{" {
 			return false
 		}
-		if string(schar) == "]" && as.Pop() != "["{
+		if string(schar) == "]" && as.Pop() != "[" {
 			return false
 		}
-		if string(schar) == ")" && as.Pop() != "("{
+		if string(schar) == ")" && as.Pop() != "(" {
 			return false
 		}
 	}
@@ -53,6 +53,6 @@ func main() {
 	// 判断栈是否为空
 	fmt.Println(as.IsEmpty())
 
-	var brackets string ="{[}()[]{}"
+	var brackets string = "{[}()[]{}"
 	fmt.Println(isValid(brackets))
 }

@@ -8,32 +8,35 @@ import (
 
 type BasicTree struct {
 	Root *Node
-	size	int
-} 
+	size int
+}
 
 type Node struct {
-	Left 	*Node
-	Right	*Node
-	Element		interface{}
+	Left    *Node
+	Right   *Node
+	Element interface{}
 }
 
 // 初始化
-func (tree *BasicTree) Constructor()  {
+func (tree *BasicTree) Constructor() {
 	tree.size = 0
 	tree.Root = nil
 }
+
 // 生成一个新的节点
 func generate(element interface{}) *Node {
 	return &Node{
-		Left:nil,
-		Right:nil,
-		Element:element,
+		Left:    nil,
+		Right:   nil,
+		Element: element,
 	}
 }
+
 // 大小
 func (tree *BasicTree) Size() int {
 	return tree.size
 }
+
 // 是否为空
 func (tree *BasicTree) IsEmpty() bool {
 	return tree.size == 0
@@ -45,6 +48,7 @@ func (tree *BasicTree) Add(e interface{}) {
 	// 调用递归函数
 	tree.Root = tree.add(tree.Root, e)
 }
+
 // 以当前node节点为根节点，进行插入
 // 返回插入新节点后二分搜索树的根
 func (tree *BasicTree) add(node *Node, e interface{}) *Node {
@@ -55,9 +59,9 @@ func (tree *BasicTree) add(node *Node, e interface{}) *Node {
 		return generate(e)
 	}
 	// 如果node不为空，进行判断
-	if (interfaces.Compare(e, node.Element) == -1) {
+	if interfaces.Compare(e, node.Element) == -1 {
 		node.Left = tree.add(node.Left, e)
-	} else if (interfaces.Compare(e, node.Element) == 1) {
+	} else if interfaces.Compare(e, node.Element) == 1 {
 		node.Right = tree.add(node.Right, e)
 	}
 	return node
@@ -68,6 +72,7 @@ func (tree *BasicTree) add(node *Node, e interface{}) *Node {
 func (tree *BasicTree) Contains(e interface{}) bool {
 	return tree.contains(tree.Root, e)
 }
+
 // 查询递归内部函数
 func (tree *BasicTree) contains(node *Node, e interface{}) bool {
 	if node == nil {
@@ -80,12 +85,12 @@ func (tree *BasicTree) contains(node *Node, e interface{}) bool {
 	if interfaces.Compare(e, node.Element) == -1 {
 		return tree.contains(node.Left, e)
 	} else {
-		return tree.contains( node.Right, e)
+		return tree.contains(node.Right, e)
 	}
 }
 
 // 前序遍历
-func (tree *BasicTree) FrontIter()  {
+func (tree *BasicTree) FrontIter() {
 	tree.frontIter(tree.Root)
 	fmt.Println()
 }
@@ -113,12 +118,12 @@ func (tree *BasicTree) String() string {
 }
 
 // 中序遍历递归实现
-func (tree *BasicTree)MidIter()  {
+func (tree *BasicTree) MidIter() {
 	tree.midIter(tree.Root)
 }
 
 // 中序遍历私有函数实现
-func (tree *BasicTree) midIter(node *Node)  {
+func (tree *BasicTree) midIter(node *Node) {
 	// 递归终止条件
 	if node == nil {
 		return
@@ -134,21 +139,20 @@ func (tree *BasicTree) midIter(node *Node)  {
 func (tree *BasicTree) generateBSTString(node *Node, depth int, buff *bytes.Buffer) {
 	if node == nil {
 		// WriteString appends the contents of s to the buffer
-		buff.WriteString(tree.generateDepthString(depth)+"nil\n")
+		buff.WriteString(tree.generateDepthString(depth) + "nil\n")
 		return
 	}
 	// --node.e
 	buff.WriteString(fmt.Sprintf("%v%v\n", tree.generateDepthString(depth), node.Element))
-	tree.generateBSTString(node.Left, depth+1,buff)
-	tree.generateBSTString(node.Right, depth+1,buff)
+	tree.generateBSTString(node.Left, depth+1, buff)
+	tree.generateBSTString(node.Right, depth+1, buff)
 	return
 }
 
-func (tree *BasicTree) generateDepthString(depth int) string{
+func (tree *BasicTree) generateDepthString(depth int) string {
 	var buffer bytes.Buffer
 	for i := 0; i < depth; i++ {
 		buffer.WriteString("--")
 	}
 	return buffer.String()
 }
-

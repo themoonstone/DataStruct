@@ -14,7 +14,7 @@ func main() {
 	}
 	fmt.Println(List.String())
 	// 向指定位置插入
-	List.Insert(3,100)
+	List.Insert(3, 100)
 	fmt.Println(List.String())
 
 	// 查询指定节点

@@ -4,32 +4,34 @@ import (
 	"github.com/labstack/gommon/log"
 	"themoonstone/DataStruct/cap7-set/c05-bstree-map/utils/interfaces"
 )
+
 // 基于二分搜索树实现map
 
 type BasicTreeMap struct {
 	Root *Node
-	size	int
+	size int
 }
 
 type Node struct {
-	Left 	*Node
-	Right	*Node
-	Key		interface{}		// key
-	Value	interface{}		// value
+	Left  *Node
+	Right *Node
+	Key   interface{} // key
+	Value interface{} // value
 }
 
 // 初始化
-func (tree_map *BasicTreeMap) Constructor()  {
+func (tree_map *BasicTreeMap) Constructor() {
 	tree_map.size = 0
 	tree_map.Root = nil
 }
+
 // 生成一个新的节点
 func genNode(key, value interface{}) *Node {
 	return &Node{
-		Left:nil,
-		Right:nil,
-		Key:key,
-		Value:value,
+		Left:  nil,
+		Right: nil,
+		Key:   key,
+		Value: value,
 	}
 }
 
@@ -41,7 +43,7 @@ func (tree_map *BasicTreeMap) get(node *Node, key interface{}) *Node {
 	}
 	if interfaces.Compare(node.Key, key) == 0 {
 		return node
-	}else if interfaces.Compare(node.Key, key) == 1 {
+	} else if interfaces.Compare(node.Key, key) == 1 {
 		return tree_map.get(node.Left, key)
 	} else {
 		return tree_map.get(node.Right, key)
@@ -55,14 +57,14 @@ func (tree_map *BasicTreeMap) Add(key interface{}, value interface{}) {
 
 // 插入递归实现
 // 返回新的二分搜索树的根节点
-func (tree_map *BasicTreeMap) add(node *Node, key, value interface{}) *Node{
+func (tree_map *BasicTreeMap) add(node *Node, key, value interface{}) *Node {
 	if node == nil {
 		tree_map.size++
 		return genNode(key, value)
 	}
 	if interfaces.Compare(node.Key, key) == 1 {
 		node.Left = tree_map.add(node.Left, key, value)
-	} else if interfaces.Compare(node.Key, key) == -1{
+	} else if interfaces.Compare(node.Key, key) == -1 {
 		node.Right = tree_map.add(node.Right, key, value)
 	} else {
 		node.Key = key
@@ -70,6 +72,7 @@ func (tree_map *BasicTreeMap) add(node *Node, key, value interface{}) *Node{
 	}
 	return node
 }
+
 // 查找最小节点
 func (tree_map *BasicTreeMap) GetMinNode() interface{} {
 	// 如果节点数量为0，抛出异常
@@ -78,6 +81,7 @@ func (tree_map *BasicTreeMap) GetMinNode() interface{} {
 	}
 	return tree_map.minNode(tree_map.Root).Key
 }
+
 // 查找最小节点递归实现
 func (tree_map *BasicTreeMap) minNode(node *Node) *Node {
 	// 递归终止条件
@@ -96,6 +100,7 @@ func (tree_map *BasicTreeMap) RemoveMin() interface{} {
 	tree_map.Root = tree_map.removeMin(tree_map.Root)
 	return min
 }
+
 // 删除以node为根节点的二分搜索树最小节点(递归实现)
 // 返回删除节点后的新的二分搜索树的根
 func (tree_map *BasicTreeMap) removeMin(node *Node) *Node {
@@ -125,6 +130,7 @@ func (tree_map *BasicTreeMap) GetMaxNode() interface{} {
 	}
 	return tree_map.maxNode(tree_map.Root).Key
 }
+
 // 查找最大节点递归实现
 func (tree_map *BasicTreeMap) maxNode(node *Node) *Node {
 	// 递归终止条件
@@ -162,7 +168,7 @@ func (tree_map *BasicTreeMap) removeMax(node *Node) *Node {
 	return node
 }
 
-func (tree_map *BasicTreeMap) Remove(key interface{}) interface{}{
+func (tree_map *BasicTreeMap) Remove(key interface{}) interface{} {
 	node := tree_map.get(tree_map.Root, key)
 	if nil != node {
 		tree_map.Root = tree_map.remove(tree_map.Root, key)
@@ -172,7 +178,7 @@ func (tree_map *BasicTreeMap) Remove(key interface{}) interface{}{
 }
 
 // 删除递归实现
-func (tree_map *BasicTreeMap) remove(node *Node, key interface{}) *Node{
+func (tree_map *BasicTreeMap) remove(node *Node, key interface{}) *Node {
 	// 递归终止条件，node为空或者删除完成
 	if node == nil {
 		return nil
@@ -180,7 +186,7 @@ func (tree_map *BasicTreeMap) remove(node *Node, key interface{}) *Node{
 	if interfaces.Compare(node.Key, key) == 1 {
 		node.Left = tree_map.remove(node.Left, key)
 		return node
-	} else if interfaces.Compare(node.Key, key) == -1{
+	} else if interfaces.Compare(node.Key, key) == -1 {
 		node.Right = tree_map.remove(node.Right, key)
 		return node
 	} else {
@@ -217,7 +223,7 @@ func (tree_map *BasicTreeMap) remove(node *Node, key interface{}) *Node{
 	}
 }
 
-func (tree_map *BasicTreeMap) Set(key ,value interface{}){
+func (tree_map *BasicTreeMap) Set(key, value interface{}) {
 	node := tree_map.get(tree_map.Root, key)
 	if node == nil {
 		log.Panicf("key [%v] is not exists\n", key)
@@ -225,7 +231,7 @@ func (tree_map *BasicTreeMap) Set(key ,value interface{}){
 	node.Value = value
 }
 
-func (tree_map *BasicTreeMap) Get(key interface{}) interface{}{
+func (tree_map *BasicTreeMap) Get(key interface{}) interface{} {
 	node := tree_map.get(tree_map.Root, key)
 	if node == nil {
 		return nil
@@ -234,17 +240,17 @@ func (tree_map *BasicTreeMap) Get(key interface{}) interface{}{
 	}
 }
 
-func (tree_map *BasicTreeMap) Contains(key interface{}) bool{
+func (tree_map *BasicTreeMap) Contains(key interface{}) bool {
 	if tree_map.get(tree_map.Root, key) != nil {
 		return true
 	}
 	return false
 }
 
-func (tree_map *BasicTreeMap) IsEmpty() bool{
+func (tree_map *BasicTreeMap) IsEmpty() bool {
 	return tree_map.size == 0
 }
 
-func (tree_map *BasicTreeMap) Size() int{
+func (tree_map *BasicTreeMap) Size() int {
 	return tree_map.size
 }

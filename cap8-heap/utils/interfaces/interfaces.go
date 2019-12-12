@@ -1,6 +1,5 @@
 package interfaces
 
-
 import "reflect"
 
 // 实现 interface{}类型比较
@@ -13,7 +12,7 @@ func Compare(a, b interface{}) int {
 	case int:
 		if a.(int) > b.(int) {
 			return 1
-		} else if a.(int) == b.(int){
+		} else if a.(int) == b.(int) {
 			return 0
 		} else {
 			return -1
@@ -21,7 +20,7 @@ func Compare(a, b interface{}) int {
 	case int64:
 		if a.(int64) > b.(int64) {
 			return 1
-		} else if a.(int64) == b.(int64){
+		} else if a.(int64) == b.(int64) {
 			return 0
 		} else {
 			return -1
@@ -29,7 +28,7 @@ func Compare(a, b interface{}) int {
 	case string:
 		if a.(string) > b.(string) {
 			return 1
-		} else if a.(string) == b.(string){
+		} else if a.(string) == b.(string) {
 			return 0
 		} else {
 			return -1
@@ -37,7 +36,7 @@ func Compare(a, b interface{}) int {
 	case float32:
 		if a.(float32) > b.(float32) {
 			return 1
-		} else if a.(float32) == b.(float32){
+		} else if a.(float32) == b.(float32) {
 			return 0
 		} else {
 			return -1
@@ -45,7 +44,7 @@ func Compare(a, b interface{}) int {
 	case float64:
 		if a.(float64) > b.(float64) {
 			return 1
-		} else if a.(float64) == b.(float64){
+		} else if a.(float64) == b.(float64) {
 			return 0
 		} else {
 			return -1

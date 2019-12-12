@@ -17,10 +17,10 @@ func main() {
 	var aq ArrayQueue.ArrayQueue
 	aq.Constructor()
 	// 入栈操作
-	for i := 0 ; i < 20; i++ {
+	for i := 0; i < 20; i++ {
 		aq.Enqueue(i)
 		fmt.Println(aq.String())
-		if i % 3 == 0 {
+		if i%3 == 0 {
 			aq.Dequeue()
 		}
 	}

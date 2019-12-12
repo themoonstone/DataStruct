@@ -13,4 +13,3 @@ type Stack interface {
 	// 检查栈是否为空
 	IsEmpty() bool
 }
-

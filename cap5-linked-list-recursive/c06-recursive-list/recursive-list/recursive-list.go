@@ -4,7 +4,7 @@ import "fmt"
 
 // leetcode中的listNode定义
 type ListNode struct {
-	Val int
+	Val  int
 	Next *ListNode
 }
 
@@ -21,7 +21,7 @@ func RemoveElements(head *ListNode, val int, depth int) *ListNode {
 	}
 
 	// res表示删除指定值之后的链表
-	res := RemoveElements(head.Next, val, depth + 1)
+	res := RemoveElements(head.Next, val, depth+1)
 	fmt.Print(generateDepth(depth))
 	fmt.Printf("After : remove %d in %v\n", val, res)
 
@@ -37,6 +37,7 @@ func RemoveElements(head *ListNode, val int, depth int) *ListNode {
 	fmt.Printf("Return: %v\n", ret)
 	return ret
 }
+
 // 生成代表递归深度的符号
 func generateDepth(depth int) string {
 	var res string
@@ -45,6 +46,7 @@ func generateDepth(depth int) string {
 	}
 	return res
 }
+
 // 格式化输出
 func (ln *ListNode) String() string {
 	var res []interface{}
@@ -62,7 +64,7 @@ func (ln *ListNode) New(nums []int) {
 	ln.Val = nums[0]
 	cur := ln
 	for i := 1; i < len(nums); i++ {
-		cur.Next = &ListNode{nums[i], nil}	// ln.Next = cur.Next
-		cur = cur.Next	// 进行这一步之后，cur后移，但ln以及ln的Next不变
+		cur.Next = &ListNode{nums[i], nil} // ln.Next = cur.Next
+		cur = cur.Next                     // 进行这一步之后，cur后移，但ln以及ln的Next不变
 	}
 }

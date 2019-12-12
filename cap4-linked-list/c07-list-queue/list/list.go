@@ -5,32 +5,36 @@ import "fmt"
 // 链表的节点结构
 type Node struct {
 	// 当前节点所存储的数据
-	Element 	interface{}
+	Element interface{}
 	// 指向下一个节点的指针(引用)
-	Next 		*Node
+	Next *Node
 }
 
 // 链表基本结构
 type LinkedListQueue struct {
-	Head 	*Node	// 链表头节点
-	Tail	*Node	// 链表尾节点
-	size	int		// 链表大小
+	Head *Node // 链表头节点
+	Tail *Node // 链表尾节点
+	size int   // 链表大小
 }
+
 // 节点的构造函数(参数包含节点和元素)
-func (node *Node) ConstructorAll(next *Node, element interface{})  {
+func (node *Node) ConstructorAll(next *Node, element interface{}) {
 	node.Element = element
 	node.Next = next
 }
+
 // 节点的构造函数(参数包含元素)
-func (node *Node) ConstructorWithData( element interface{})  {
+func (node *Node) ConstructorWithData(element interface{}) {
 	node.Element = element
 	node.Next = nil
 }
+
 // 节点的构造函数(无参)
 func (node *Node) Constructor() {
 	node.Element = nil
 	node.Next = nil
 }
+
 // 链表的构造函数(针对虚拟头节点有用)
 func (lq *LinkedListQueue) Constructor() {
 
@@ -50,7 +54,7 @@ func (lq *LinkedListQueue) IsEmpty() bool {
 }
 
 // 入队
-func (lq *LinkedListQueue) Enqueue(element interface{})  {
+func (lq *LinkedListQueue) Enqueue(element interface{}) {
 	var node Node
 	node.ConstructorWithData(element)
 	// 生成一个节点，让队尾next指向该节点
@@ -59,7 +63,7 @@ func (lq *LinkedListQueue) Enqueue(element interface{})  {
 	if lq.Tail == nil {
 		lq.Tail = &node
 		lq.Head = lq.Tail
-	}else {
+	} else {
 		lq.Tail.Next = &node
 		// 尾部节点记得要向后移
 		lq.Tail = lq.Tail.Next

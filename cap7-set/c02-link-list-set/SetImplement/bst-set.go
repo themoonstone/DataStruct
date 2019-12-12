@@ -1,6 +1,6 @@
 package SetImplement
 
-import  basic "themoonstone/DataStruct/cap7-set/c02-link-list-set/basic-bstree"
+import basic "themoonstone/DataStruct/cap7-set/c02-link-list-set/basic-bstree"
 
 // 基于二分搜索树的集合定义
 type BSTSet struct {
@@ -8,11 +8,11 @@ type BSTSet struct {
 }
 
 // set 接口的实现
-func (bs *BSTSet) Add(e interface{})  {
+func (bs *BSTSet) Add(e interface{}) {
 	bs.BasicTree.Add(e)
 }
 
-func (bs *BSTSet) Remove(e interface{})  {
+func (bs *BSTSet) Remove(e interface{}) {
 	bs.BasicTree.RemoveAnyNode(e)
 }
 

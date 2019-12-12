@@ -12,11 +12,11 @@ func (bs *BSTSet) Construct() {
 }
 
 // set 接口的实现
-func (bs *BSTSet) Add(e interface{})  {
+func (bs *BSTSet) Add(e interface{}) {
 	bs.BasicTree.Add(e)
 }
 
-func (bs *BSTSet) Remove(e interface{})  {
+func (bs *BSTSet) Remove(e interface{}) {
 	bs.BasicTree.RemoveAnyNode(e)
 }
 

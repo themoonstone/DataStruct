@@ -33,16 +33,16 @@ func (ls *ListStack) Push(element interface{}) {
 	ls.linkList.InsertHead(element)
 }
 
-func (ls *ListStack) Pop() interface{}{
+func (ls *ListStack) Pop() interface{} {
 	return ls.linkList.DeleteHead()
 }
-func (ls *ListStack) Peek() interface{}{
+func (ls *ListStack) Peek() interface{} {
 	return ls.linkList.GetFirst()
 }
-func (ls *ListStack) GetSize() int{
+func (ls *ListStack) GetSize() int {
 	return ls.linkList.GetSize()
 }
-func (ls *ListStack) IsEmpty() bool{
+func (ls *ListStack) IsEmpty() bool {
 	return ls.linkList.IsEmpty()
 }
 

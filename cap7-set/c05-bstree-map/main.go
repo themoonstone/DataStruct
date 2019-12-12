@@ -24,16 +24,16 @@ func main() {
 	if nil != err {
 		panic(content)
 	}
-	 //提取单词
+	//提取单词
 	words := strings.FieldsFunc(string(content), func(r rune) bool {
 		return !unicode.IsLetter(r)
 	})
 	//词频统计
 	for _, word := range words {
 		if bm.Contains(word) {
-			bm.Set(word, bm.Get(word).(int) + 1)
+			bm.Set(word, bm.Get(word).(int)+1)
 		} else {
-			bm.Add(word,1)
+			bm.Add(word, 1)
 		}
 	}
 	fmt.Println(bm.Get("what"))

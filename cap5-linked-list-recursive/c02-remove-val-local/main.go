@@ -7,7 +7,7 @@ import (
 
 func main() {
 	// 给定一个数组，生成一个链表
-	var nums []int = []int{1,2,6,3,4,5,6}
+	var nums []int = []int{1, 2, 6, 3, 4, 5, 6}
 	var listNode *list.ListNode = new(list.ListNode)
 
 	listNode.New(nums)

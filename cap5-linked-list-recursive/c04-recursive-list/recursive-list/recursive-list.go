@@ -2,7 +2,7 @@ package recursive_list
 
 // leetcode中的listNode定义
 type ListNode struct {
-	Val int
+	Val  int
 	Next *ListNode
 }
 

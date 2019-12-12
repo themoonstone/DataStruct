@@ -9,9 +9,10 @@ import (
 	"themoonstone/DataStruct/cap7-set/c03-set-btest/SetImplement"
 	"unicode"
 )
+
 //  2         857209600 ns/op
 // 2         871671950 ns/op
-func BenchmarkLinkListSet(b *testing.B)  {
+func BenchmarkLinkListSet(b *testing.B) {
 	var list_set SetImplement.LinkedListSet
 	list_set.Constructor()
 	// 做一个单词统计应用
@@ -63,7 +64,6 @@ func BenchmarkBSTreeSet(b *testing.B) {
 	})
 	// 统计单词数量
 	fmt.Printf("Total counts : %d\n", len(words))
-
 
 	for i := 0; i < b.N; i++ {
 		// 将所有单词存入集合中

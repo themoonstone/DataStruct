@@ -31,9 +31,9 @@ func main() {
 	// 词频统计
 	for _, word := range words {
 		if lm.Contains(word) {
-			lm.Set(word, lm.Get(word).(int) + 1)
+			lm.Set(word, lm.Get(word).(int)+1)
 		} else {
-			lm.Add(word,1)
+			lm.Add(word, 1)
 		}
 	}
 

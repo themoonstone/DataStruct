@@ -9,8 +9,8 @@ type LineSegmentTree struct {
 }
 
 // 构造函数(用户传进来的应该是整个区间的范围)
-func (segmentTree *LineSegmentTree)Constructor(data []interface{})  {
-	segmentTree.Data = make([]interface{},len(data))
+func (segmentTree *LineSegmentTree) Constructor(data []interface{}) {
+	segmentTree.Data = make([]interface{}, len(data))
 	segmentTree.Data = data
 	segmentTree.size = len(data)
 }
@@ -30,10 +30,10 @@ func (segmentTree *LineSegmentTree) Get(index int) interface{} {
 
 // 返回一个完全二叉树的数组表示中,一个索引所表示的左孩子的节点的索引
 func (segmentTree *LineSegmentTree) leftChild(index int) int {
-	return 2 * index + 1
+	return 2*index + 1
 }
 
 // 返回一个完全二叉树的数组表示中,一个索引所表示的右孩子的节点的索引
 func (segmentTree *LineSegmentTree) rightChild(index int) int {
-	return 2 * index + 2
+	return 2*index + 2
 }

@@ -24,7 +24,7 @@ func main() {
 	// ListStack
 	var ls listStack.ListStack
 	ls.Constructor()
-	fmt.Println(opStack(&ls,10000000))
+	fmt.Println(opStack(&ls, 10000000))
 	// ArrayStack
 	var as arrayStack.ArrayStack
 	as.Constructor()
@@ -37,12 +37,12 @@ func main() {
 
 // 性能比较
 // 分别为ArrayStack和ListStack添加100000条数据，然后再全部出栈，比较运行时间
-func opStack(stack stack.Stack, opCount int) int64{
+func opStack(stack stack.Stack, opCount int) int64 {
 	start := time.Now().UnixNano()
 	for i := 0; i < opCount; i++ {
 		stack.Push(i)
 	}
-	for i :=0; i < opCount; i++ {
+	for i := 0; i < opCount; i++ {
 		stack.Pop()
 	}
 	return time.Now().UnixNano() - start

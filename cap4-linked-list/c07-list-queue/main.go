@@ -9,14 +9,13 @@ func main() {
 	var lq list.LinkedListQueue
 	lq.Constructor()
 	// 入栈操作
-	for i := 0 ; i < 5; i++ {
+	for i := 0; i < 5; i++ {
 		lq.Enqueue(i)
 		fmt.Println(lq.String())
-		if i % 3 == 0 {
+		if i%3 == 0 {
 			lq.Dequeue()
 		}
 	}
 	fmt.Println(lq.GetSize())
 	fmt.Println(lq.String())
 }
-

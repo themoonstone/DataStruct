@@ -17,10 +17,10 @@ func main() {
 	var queue LoopQueue.LoopQueue
 	queue.Constructor()
 	// 入栈操作
-	for i := 0 ; i < 10; i++ {
+	for i := 0; i < 10; i++ {
 		queue.Enqueue(i)
-		fmt.Printf("i : %d -- queue : %v\n",i, queue.String())
-		if i % 3 == 0 {
+		fmt.Printf("i : %d -- queue : %v\n", i, queue.String())
+		if i%3 == 0 {
 			queue.Dequeue()
 		}
 	}

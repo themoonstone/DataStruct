@@ -5,31 +5,35 @@ import "fmt"
 // 链表的节点结构
 type Node struct {
 	// 当前节点所存储的数据
-	Element 	interface{}
+	Element interface{}
 	// 指向下一个节点的指针(引用)
-	Next 		*Node
+	Next *Node
 }
 
 // 链表基本结构
 type LinkedList struct {
-	DummyHead 	*Node	// 链表头节点(修改为虚拟头节点)
-	size	int		// 链表大小
+	DummyHead *Node // 链表头节点(修改为虚拟头节点)
+	size      int   // 链表大小
 }
+
 // 节点的构造函数(参数包含节点和元素)
-func (node *Node) ConstructorAll(next *Node, element interface{})  {
+func (node *Node) ConstructorAll(next *Node, element interface{}) {
 	node.Element = element
 	node.Next = next
 }
+
 // 节点的构造函数(参数包含元素)
-func (node *Node) ConstructorWithData( element interface{})  {
+func (node *Node) ConstructorWithData(element interface{}) {
 	node.Element = element
 	node.Next = nil
 }
+
 // 节点的构造函数(无参)
 func (node *Node) Constructor() {
 	node.Element = nil
 	node.Next = nil
 }
+
 // 链表的构造函数(针对虚拟头节点有用)
 func (list *LinkedList) Constructor() {
 	// 生成一个虚拟头节点,其元素为空，next也为空
@@ -37,6 +41,7 @@ func (list *LinkedList) Constructor() {
 	dummyHead.Constructor()
 	list.size = 0
 }
+
 // 实现链表的格式化输出
 func (node *Node) String() string {
 	return fmt.Sprintln(node.Element)
@@ -54,10 +59,10 @@ func (list *LinkedList) IsEmpty() bool {
 
 // 从链表指定位置插入数据
 // 插入节点最重要的是找到待插入索引位置的前一个位置的节点
-func (list *LinkedList) Insert(index int, element interface{})  {
+func (list *LinkedList) Insert(index int, element interface{}) {
 	// index合法性判断
 	if index < 0 || index > list.size {
-			panic("insert failed! illegal index")
+		panic("insert failed! illegal index")
 	}
 	// 从指定位置插入，先给一个prev节点,从DummyHead开始
 	prev := list.DummyHead
@@ -70,10 +75,11 @@ func (list *LinkedList) Insert(index int, element interface{})  {
 	}
 	var node *Node = new(Node)
 	node.Element = element
-	node.Next = prev.Next 	// 新节点的next指向原prev节点的next
-	prev.Next = node		// 新节点node作为原prev节点的next，注意，与上面的顺序不能错
-	list.size++				// 链表大小加1
+	node.Next = prev.Next // 新节点的next指向原prev节点的next
+	prev.Next = node      // 新节点node作为原prev节点的next，注意，与上面的顺序不能错
+	list.size++           // 链表大小加1
 }
+
 // 从链表头部插入数据
 func (list *LinkedList) InsertHead(element interface{}) {
 	// 通过新元素生成一个node,让该node的next指向head节点，然后使该node成为新的头节点
@@ -83,7 +89,7 @@ func (list *LinkedList) InsertHead(element interface{}) {
 	//node.ConstructorAll(list.Head, element)
 	//list.Head = node
 
-	list.Insert(0,element)
+	list.Insert(0, element)
 	//list.size++
 }
 

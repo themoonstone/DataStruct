@@ -5,7 +5,7 @@ package _map
 type Map interface {
 	Add(key interface{}, value interface{})
 	Remove(key interface{}) interface{}
-	Set(key ,value interface{})
+	Set(key, value interface{})
 	Get(key interface{}) interface{}
 	Contains(key interface{}) bool
 	IsEmpty() bool

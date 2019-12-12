@@ -6,32 +6,36 @@ import (
 )
 
 type Array struct {
-	data    []int		// 设置数组变量
-	size	int			// 设置数组长度
+	data []int // 设置数组变量
+	size int   // 设置数组长度
 }
+
 // 初始化
 func (a *Array) InitArray(capacity int) {
 	a.data = make([]int, capacity)
 }
 
 func (a *Array) InitDefaultArray() {
-	a.data = make([]int,10)
+	a.data = make([]int, 10)
 }
+
 // 获取数组容量
-func  (a *Array) GetCapacity() int {
+func (a *Array) GetCapacity() int {
 	return len(a.data)
 }
+
 // 获取数组元素个数
 func (a *Array) GetSize() int {
 	return a.size
 }
+
 // 获取数组是否为空
 func (a *Array) IsEmpty() bool {
 	return a.size == 0
 }
 
 // 向数组尾部添加一个新的元素
-func (a *Array)AddLast(val int)  {
+func (a *Array) AddLast(val int) {
 	a.Insert(a.size, val)
 }
 
@@ -46,7 +50,7 @@ func (a *Array) Insert(index, val int) {
 	}
 	// 将大于Index的位置的元素后移一位
 	for i := a.size - 1; i >= index; i-- {
-		a.data[i + 1] = a.data[i]
+		a.data[i+1] = a.data[i]
 	}
 	// 将index的val插入
 	a.data[index] = val
@@ -54,7 +58,7 @@ func (a *Array) Insert(index, val int) {
 }
 
 // 向数组头部插入一个新的元素
-func (a *Array) AddFirst(val int)  {
+func (a *Array) AddFirst(val int) {
 	a.Insert(0, val)
 }
 
@@ -83,6 +87,7 @@ func (a *Array) Contain(value int) bool {
 	}
 	return false
 }
+
 // 实现查找函数
 // 查找指定元素的索引，如果没有找到返回-1
 func (a *Array) Find(value int) int {
@@ -93,6 +98,7 @@ func (a *Array) Find(value int) int {
 	}
 	return -1
 }
+
 // 实现删除函数
 // 返回被删除元素
 func (a *Array) Remove(index int) (value int) {
@@ -100,7 +106,7 @@ func (a *Array) Remove(index int) (value int) {
 		panic("index out of range")
 	}
 	value = a.data[index]
-	for i := index;i < a.size - 1 ; i++ {
+	for i := index; i < a.size-1; i++ {
 		a.data[i] = a.data[i+1]
 	}
 	a.size--
@@ -111,23 +117,25 @@ func (a *Array) Remove(index int) (value int) {
 func (a *Array) RemoveHead() (value int) {
 	return a.Remove(0)
 }
+
 // 删除尾部元素
 func (a *Array) RemoveTail() (value int) {
-	return a.Remove(a.size-1)
+	return a.Remove(a.size - 1)
 }
+
 // 实现自定义数组的格式化输出
 func (a *Array) String() string {
 	var result bytes.Buffer
 	var s []byte
-	s = append(s,[]byte("[")...)
-	for i := 0; i < a.size; i++{
-		s = append(s,[]byte(fmt.Sprintf("%d",a.data[i]))...)
-		if i != a.size - 1 {
+	s = append(s, []byte("[")...)
+	for i := 0; i < a.size; i++ {
+		s = append(s, []byte(fmt.Sprintf("%d", a.data[i]))...)
+		if i != a.size-1 {
 			s = append(s, []byte(",")...)
 		}
 	}
 
-	s = append(s,[]byte("]")...)
+	s = append(s, []byte("]")...)
 	result.Write(s)
 	return result.String()
 }

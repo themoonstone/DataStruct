@@ -7,14 +7,14 @@ type LinkedListSet struct {
 }
 
 // set 接口的实现
-func (ls *LinkedListSet) Add(e interface{})  {
+func (ls *LinkedListSet) Add(e interface{}) {
 	// 根据集合的特点，需要去重
 	if !ls.Contains(e) {
 		ls.LinkedList.InsertTail(e)
 	}
 }
 
-func (ls *LinkedListSet) Remove(e interface{})  {
+func (ls *LinkedListSet) Remove(e interface{}) {
 	ls.LinkedList.RemoveElement(e)
 }
 

@@ -6,32 +6,35 @@ import (
 
 type BasicTree struct {
 	Root *Node
-	size	int
-} 
+	size int
+}
 
 type Node struct {
-	Left 	*Node
-	Right	*Node
-	Element		interface{}
+	Left    *Node
+	Right   *Node
+	Element interface{}
 }
 
 // 初始化
-func (tree *BasicTree) Constructor(e interface{})  {
+func (tree *BasicTree) Constructor(e interface{}) {
 	tree.size = 0
 	tree.Root = nil
 }
+
 // 生成一个新的节点
 func generate(element interface{}) *Node {
 	return &Node{
-		Left:nil,
-		Right:nil,
-		Element:element,
+		Left:    nil,
+		Right:   nil,
+		Element: element,
 	}
 }
+
 // 大小
 func (tree *BasicTree) Size() int {
 	return tree.size
 }
+
 // 是否为空
 func (tree *BasicTree) IsEmpty() bool {
 	return tree.size == 0
@@ -43,6 +46,7 @@ func (tree *BasicTree) Add(e interface{}) {
 	// 调用递归函数
 	tree.Root = tree.add(tree.Root, e)
 }
+
 // 以当前node节点为根节点，进行插入
 // 返回插入新节点后二分搜索树的根
 func (tree *BasicTree) add(node *Node, e interface{}) *Node {
@@ -53,9 +57,9 @@ func (tree *BasicTree) add(node *Node, e interface{}) *Node {
 		return generate(e)
 	}
 	// 如果node不为空，进行判断
-	if (interfaces.Compare(e, node.Element) == -1) {
+	if interfaces.Compare(e, node.Element) == -1 {
 		node.Left = tree.add(node.Left, e)
-	} else if (interfaces.Compare(e, node.Element) == 1) {
+	} else if interfaces.Compare(e, node.Element) == 1 {
 		node.Right = tree.add(node.Right, e)
 	}
 	return node

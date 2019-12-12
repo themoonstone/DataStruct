@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-func QueueOp(queue queue.Queue,opCount int) int64{
+func QueueOp(queue queue.Queue, opCount int) int64 {
 	start := time.Now().UnixNano()
 	for i := 0; i < opCount; i++ {
 		queue.Enqueue(i)

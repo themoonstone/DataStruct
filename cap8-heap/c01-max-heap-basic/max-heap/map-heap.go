@@ -11,14 +11,17 @@ type MaxHeap struct {
 func (heap *MaxHeap) Construct() {
 	heap.InitDefaultArray()
 }
+
 // 有参构造函数
-func (heap *MaxHeap) ConstructWithCap(cap int)  {
+func (heap *MaxHeap) ConstructWithCap(cap int) {
 	heap.InitArray(cap)
 }
+
 // 大小
 func (heap *MaxHeap) Size() int {
 	return heap.GetSize()
 }
+
 // 非空判断
 func (heap *MaxHeap) IsEmpty() bool {
 	return heap.GetSize() == 0
@@ -32,10 +35,12 @@ func (heap *MaxHeap) Parent(index int) int {
 	}
 	return (index - 1) / 2
 }
+
 // 获取左子节点索引
 func (heap *MaxHeap) LeftChild(index int) int {
-	return 2 * index + 1
+	return 2*index + 1
 }
+
 // 获取右子节点索引
 func (heap *MaxHeap) RigthChild(index int) int {
 	return 2 * (index + 1)

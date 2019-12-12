@@ -12,7 +12,7 @@ func RemoveElementsWithDummyHead(head *ListNode, val int) *ListNode {
 		if prev.Next.Val == val {
 			delNode := prev.Next
 			prev.Next = delNode.Next
-			delNode.Next = nil	// 和链表断掉联系
+			delNode.Next = nil // 和链表断掉联系
 		} else {
 			// 元素不匹配，prev后移
 			prev = prev.Next
